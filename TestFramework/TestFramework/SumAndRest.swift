@@ -9,10 +9,6 @@ import Foundation
 
 public class SumAndRest {
     
-    private init(){
-
-    }
-    
     public static func sum(one: Double, two: Double) -> Double {
         let result = one + two
         return result
