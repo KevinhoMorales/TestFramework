@@ -10,6 +10,7 @@
 		2A74659F25F01ED6002472A2 /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A74659525F01ED6002472A2 /* TestFramework.framework */; };
 		2A7465A425F01ED6002472A2 /* TestFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7465A325F01ED6002472A2 /* TestFrameworkTests.swift */; };
 		2A7465A625F01ED6002472A2 /* TestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A74659825F01ED6002472A2 /* TestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A7465B225F01F06002472A2 /* SumAndRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7465B125F01F06002472A2 /* SumAndRest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		2A74659E25F01ED6002472A2 /* TestFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7465A325F01ED6002472A2 /* TestFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFrameworkTests.swift; sourceTree = "<group>"; };
 		2A7465A525F01ED6002472A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A7465B125F01F06002472A2 /* SumAndRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumAndRest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				2A74659825F01ED6002472A2 /* TestFramework.h */,
 				2A74659925F01ED6002472A2 /* Info.plist */,
+				2A7465B125F01F06002472A2 /* SumAndRest.swift */,
 			);
 			path = TestFramework;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					2A74659425F01ED6002472A2 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					2A74659D25F01ED6002472A2 = {
 						CreatedOnToolsVersion = 12.4;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7465B225F01F06002472A2 /* SumAndRest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		2A7465AA25F01ED6002472A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5S22W76BBZ;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinhomorales.TestFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		2A7465AB25F01ED6002472A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5S22W76BBZ;
@@ -389,6 +397,7 @@
 		2A7465AD25F01ED6002472A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S22W76BBZ;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
@@ -407,6 +416,7 @@
 		2A7465AE25F01ED6002472A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S22W76BBZ;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
